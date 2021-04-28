@@ -1,0 +1,180 @@
+[
+    {
+        "label": "webdriver",
+        "importPath": "selenium",
+        "description": "selenium",
+        "isExtraImport": true,
+        "detail": "selenium",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "short_and_log",
+        "kind": 2,
+        "importPath": "Tests.Find_longest_and_shortest_words",
+        "description": "Tests.Find_longest_and_shortest_words",
+        "peekOfCode": "def short_and_log(string):\n    currentLong = ''\n    currentShort = string\n    chars = ['!', '@', '#', '$', '%', '?', ',', '.', ' ']\n    # itterate through the string and find the longest and shortest words\n    word = ''\n    for i in range(0, len(string)):\n        ch = string[i]\n        print(ch, i, len(string))\n        if ch in chars:",
+        "detail": "Tests.Find_longest_and_shortest_words",
+        "documentation": {}
+    },
+    {
+        "label": "test_001",
+        "kind": 2,
+        "importPath": "Tests.Find_longest_and_shortest_words",
+        "description": "Tests.Find_longest_and_shortest_words",
+        "peekOfCode": "def test_001():\n    assert short_and_log(\"hello worlds\") == ['worlds', 'hello']\ndef test_002():\n    assert short_and_log('HELLO WORLDS') == ['worlds', 'hello']\ndef test_003():\n    assert short_and_log('') == ['', '']\ndef test_004():\n    assert short_and_log(\"Hello worlds!\") == ['worlds', 'hello']",
+        "detail": "Tests.Find_longest_and_shortest_words",
+        "documentation": {}
+    },
+    {
+        "label": "test_002",
+        "kind": 2,
+        "importPath": "Tests.Find_longest_and_shortest_words",
+        "description": "Tests.Find_longest_and_shortest_words",
+        "peekOfCode": "def test_002():\n    assert short_and_log('HELLO WORLDS') == ['worlds', 'hello']\ndef test_003():\n    assert short_and_log('') == ['', '']\ndef test_004():\n    assert short_and_log(\"Hello worlds!\") == ['worlds', 'hello']",
+        "detail": "Tests.Find_longest_and_shortest_words",
+        "documentation": {}
+    },
+    {
+        "label": "test_003",
+        "kind": 2,
+        "importPath": "Tests.Find_longest_and_shortest_words",
+        "description": "Tests.Find_longest_and_shortest_words",
+        "peekOfCode": "def test_003():\n    assert short_and_log('') == ['', '']\ndef test_004():\n    assert short_and_log(\"Hello worlds!\") == ['worlds', 'hello']",
+        "detail": "Tests.Find_longest_and_shortest_words",
+        "documentation": {}
+    },
+    {
+        "label": "test_004",
+        "kind": 2,
+        "importPath": "Tests.Find_longest_and_shortest_words",
+        "description": "Tests.Find_longest_and_shortest_words",
+        "peekOfCode": "def test_004():\n    assert short_and_log(\"Hello worlds!\") == ['worlds', 'hello']",
+        "detail": "Tests.Find_longest_and_shortest_words",
+        "documentation": {}
+    },
+    {
+        "label": "vowels",
+        "kind": 2,
+        "importPath": "Tests.Test1_demo",
+        "description": "Tests.Test1_demo",
+        "peekOfCode": "def vowels(string):\n\tvowels = ['a', 'e', 'i', 'o', 'u']\n\tcount = 0\n\tfor ch in string.lower():\n\t\tif ch in vowels:\n\t\t\tcount += 1\n\treturn count\nprint (vowels('Hello world'))\ndef test_count_sunny_001():\n\tassert vowels('hello world') == 3",
+        "detail": "Tests.Test1_demo",
+        "documentation": {}
+    },
+    {
+        "label": "test_count_sunny_001",
+        "kind": 2,
+        "importPath": "Tests.Test1_demo",
+        "description": "Tests.Test1_demo",
+        "peekOfCode": "def test_count_sunny_001():\n\tassert vowels('hello world') == 3\ndef test_count_sunny_002():\n\tassert vowels('HELLO WORLD') == 3\ndef test_count_sunny_003():\n\tassert vowels('aeiou') == 5\n\tassert vowels(\"AEIOU\") == 5\ndef test_count_rain_001():\n\tassert vowels('') == 0\ndef test_count_rain_002():",
+        "detail": "Tests.Test1_demo",
+        "documentation": {}
+    },
+    {
+        "label": "test_count_sunny_002",
+        "kind": 2,
+        "importPath": "Tests.Test1_demo",
+        "description": "Tests.Test1_demo",
+        "peekOfCode": "def test_count_sunny_002():\n\tassert vowels('HELLO WORLD') == 3\ndef test_count_sunny_003():\n\tassert vowels('aeiou') == 5\n\tassert vowels(\"AEIOU\") == 5\ndef test_count_rain_001():\n\tassert vowels('') == 0\ndef test_count_rain_002():\n\tassert vowels('1231241') == 0\ndef test_count_rain_003():",
+        "detail": "Tests.Test1_demo",
+        "documentation": {}
+    },
+    {
+        "label": "test_count_sunny_003",
+        "kind": 2,
+        "importPath": "Tests.Test1_demo",
+        "description": "Tests.Test1_demo",
+        "peekOfCode": "def test_count_sunny_003():\n\tassert vowels('aeiou') == 5\n\tassert vowels(\"AEIOU\") == 5\ndef test_count_rain_001():\n\tassert vowels('') == 0\ndef test_count_rain_002():\n\tassert vowels('1231241') == 0\ndef test_count_rain_003():\n\tassert vowels('zsfgytlnm') == 0",
+        "detail": "Tests.Test1_demo",
+        "documentation": {}
+    },
+    {
+        "label": "test_count_rain_001",
+        "kind": 2,
+        "importPath": "Tests.Test1_demo",
+        "description": "Tests.Test1_demo",
+        "peekOfCode": "def test_count_rain_001():\n\tassert vowels('') == 0\ndef test_count_rain_002():\n\tassert vowels('1231241') == 0\ndef test_count_rain_003():\n\tassert vowels('zsfgytlnm') == 0",
+        "detail": "Tests.Test1_demo",
+        "documentation": {}
+    },
+    {
+        "label": "test_count_rain_002",
+        "kind": 2,
+        "importPath": "Tests.Test1_demo",
+        "description": "Tests.Test1_demo",
+        "peekOfCode": "def test_count_rain_002():\n\tassert vowels('1231241') == 0\ndef test_count_rain_003():\n\tassert vowels('zsfgytlnm') == 0",
+        "detail": "Tests.Test1_demo",
+        "documentation": {}
+    },
+    {
+        "label": "test_count_rain_003",
+        "kind": 2,
+        "importPath": "Tests.Test1_demo",
+        "description": "Tests.Test1_demo",
+        "peekOfCode": "def test_count_rain_003():\n\tassert vowels('zsfgytlnm') == 0",
+        "detail": "Tests.Test1_demo",
+        "documentation": {}
+    },
+    {
+        "label": "\tvowels",
+        "kind": 5,
+        "importPath": "Tests.Test1_demo",
+        "description": "Tests.Test1_demo",
+        "peekOfCode": "\tvowels = ['a', 'e', 'i', 'o', 'u']\n\tcount = 0\n\tfor ch in string.lower():\n\t\tif ch in vowels:\n\t\t\tcount += 1\n\treturn count\nprint (vowels('Hello world'))\ndef test_count_sunny_001():\n\tassert vowels('hello world') == 3\ndef test_count_sunny_002():",
+        "detail": "Tests.Test1_demo",
+        "documentation": {}
+    },
+    {
+        "label": "\tcount",
+        "kind": 5,
+        "importPath": "Tests.Test1_demo",
+        "description": "Tests.Test1_demo",
+        "peekOfCode": "\tcount = 0\n\tfor ch in string.lower():\n\t\tif ch in vowels:\n\t\t\tcount += 1\n\treturn count\nprint (vowels('Hello world'))\ndef test_count_sunny_001():\n\tassert vowels('hello world') == 3\ndef test_count_sunny_002():\n\tassert vowels('HELLO WORLD') == 3",
+        "detail": "Tests.Test1_demo",
+        "documentation": {}
+    },
+    {
+        "label": "test_serach_puppies",
+        "kind": 2,
+        "importPath": "Tests.Test2_selenium",
+        "description": "Tests.Test2_selenium",
+        "peekOfCode": "def test_serach_puppies():\n    # Go to the chosen site\n    driver.get('https://google.com')\n    # type in a search term\n    driver.find_element(By.NAME, 'q').send_keys('puppies')\n    # submit for search\n    driver.find_element(By.NAME, 'btnK').submit()\n    # assert if the needed page is loaded\n    assert 'puppies' in driver.title\ndef test_search_frost():",
+        "detail": "Tests.Test2_selenium",
+        "documentation": {}
+    },
+    {
+        "label": "test_search_frost",
+        "kind": 2,
+        "importPath": "Tests.Test2_selenium",
+        "description": "Tests.Test2_selenium",
+        "peekOfCode": "def test_search_frost():\n    driver.get('https://statsroyale.com')\n    driver.find_element(By.CSS_SELECTOR, \"[href='/cards']\").click()\n    card = driver.find_element(By.CSS_SELECTOR, \"[href*='Ice+Spirit']\") # *= in CSS means contains\n    assert card.is_displayed() \ndef test_search_heal():\n    driver.get('https://statsroyale.com')\n    driver.find_element(By.CSS_SELECTOR, \"[href='/cards']\").click()\n    card = driver.find_element(By.CSS_SELECTOR, \"[href*='Heal+Spirit']\") # *= in CSS means contains\n    assert card.is_displayed()",
+        "detail": "Tests.Test2_selenium",
+        "documentation": {}
+    },
+    {
+        "label": "test_search_heal",
+        "kind": 2,
+        "importPath": "Tests.Test2_selenium",
+        "description": "Tests.Test2_selenium",
+        "peekOfCode": "def test_search_heal():\n    driver.get('https://statsroyale.com')\n    driver.find_element(By.CSS_SELECTOR, \"[href='/cards']\").click()\n    card = driver.find_element(By.CSS_SELECTOR, \"[href*='Heal+Spirit']\") # *= in CSS means contains\n    assert card.is_displayed()",
+        "detail": "Tests.Test2_selenium",
+        "documentation": {}
+    },
+    {
+        "label": "driver",
+        "kind": 5,
+        "importPath": "Tests.Test2_selenium",
+        "description": "Tests.Test2_selenium",
+        "peekOfCode": "driver = webdriver.Edge(executable_path=\"S:\\\\Testing\\\\Python\\\\msedgedriver.exe\")\ndef test_serach_puppies():\n    # Go to the chosen site\n    driver.get('https://google.com')\n    # type in a search term\n    driver.find_element(By.NAME, 'q').send_keys('puppies')\n    # submit for search\n    driver.find_element(By.NAME, 'btnK').submit()\n    # assert if the needed page is loaded\n    assert 'puppies' in driver.title",
+        "detail": "Tests.Test2_selenium",
+        "documentation": {}
+    }
+]
